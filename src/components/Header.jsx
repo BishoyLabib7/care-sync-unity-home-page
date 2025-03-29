@@ -37,24 +37,20 @@ function Header() {
             />
           </div>
           <div className="flex flex-col h-full pl-5 pt-5 gap-10 text-white">
-            <a className="text-xl" href="business#features">
+            <a className="text-xl" href="#features">
               Features
             </a>
-            <a className="text-xl" href="business#pricing">
+            <a className="text-xl" href="#pricing">
               Pricing
             </a>
             <a
               className="text-xl"
               title="Click to go to the Resellers page"
-              href="business/resell"
+              href="/resell"
             >
               Resell
             </a>
-            <a
-              className="text-xl"
-              href="business#faq"
-              title="Open website menu"
-            >
+            <a className="text-xl" href="#faq" title="Open website menu">
               FAQ
             </a>
           </div>
@@ -76,14 +72,14 @@ function Header() {
       </div>
       <div className="hidden grow md:flex justify-between">
         <a
-          href="business#features"
+          href="#features"
           aria-label="Features"
           title="View the Features section"
         >
           Features
         </a>
         <a
-          href="business#pricing"
+          href="#pricing"
           aria-label="Pricing"
           title="View the Pricing section"
         >
@@ -92,12 +88,12 @@ function Header() {
         <a
           aria-label="Resell"
           title="Click to go to the Resellers page"
-          href="business/resell"
+          href="/resell"
         >
           Resell
         </a>
         <a
-          href="business#faq"
+          href="#faq"
           aria-label="Frequently Asked Questions (FAQ)"
           title="View the Frequently Asked Questions section"
         >
