@@ -59,14 +59,27 @@ function Header() {
       <div className="relative grow">
         <div className="w-fit">
           <a href>
-            <img
-              alt="care-sync Logo"
-              loading="lazy"
-              width={70}
-              height={75}
-              // style={{ color: "transparent" }}
-              src="/images/logo-icon.png"
-            />
+            <div className="flex items-center gap-2">
+              {" "}
+              <img
+                alt="care-sync Logo"
+                loading="lazy"
+                width={70}
+                height={75}
+                className="logo move"
+                // style={{ color: "transparent" }}
+                src="/images/logo-icon.png"
+              />
+              <img
+                alt="care-sync Logo"
+                loading="lazy"
+                width={70}
+                height={75}
+                className="logo"
+                // style={{ color: "transparent" }}
+                src="/images/care-sync-unity-logo.png"
+              />{" "}
+            </div>
           </a>
         </div>
       </div>
