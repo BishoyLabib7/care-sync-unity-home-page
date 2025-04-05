@@ -129,10 +129,17 @@ select {
 .logo {
   width: 100%;
   height: 60px;
-  /* animation: mymove 5s infinite; */
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
 }
 
 .move {
+  width: 100%;
+  height: 60px;
   animation: mymove 4s infinite;
 }
 @keyframes mymove {
