@@ -66,7 +66,7 @@ function Header() {
                 loading="lazy"
                 width={70}
                 height={75}
-                className="logo move"
+                className=" move"
                 // style={{ color: "transparent" }}
                 src="/images/logo-icon.png"
               />
@@ -118,7 +118,7 @@ function Header() {
           className
           aria-label="Get Started Free - Start now"
           title="Click to get started for free"
-          href="http://localhost:5174/login"
+          href="https://caresyncunity.live/login"
         >
           <button
             className="text-[#0B3E7A] text-center flex items-center justify-center transition-all capitalize bg-white font-semibold rounded-md border-gray-200 hover:opacity-90 h-[40px] w-[155px]"
