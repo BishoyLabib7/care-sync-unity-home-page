@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FadeUp } from "../utility/animation";
 const images = [
-  "../../public/images/Hero1.jpg",
-  "../../public/images/Hero2.jpg",
-  "../../public/images/Hero3.jpg",
-  "../../public/images/Hero4.jpg",
-  "../../public/images/Hero5.jpg",
+  "/images/Hero1.jpg",
+  "/images/Hero2.jpg",
+  "/images/Hero3.jpg",
+  "/images/Hero4.jpg",
+  "/images/Hero5.jpg",
 ];
 
 function HeroSec() {
@@ -15,9 +15,9 @@ function HeroSec() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 4000); // Change image every 4 seconds
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval); // Clean up the interval when component unmounts
   }, []);
 
   return (
@@ -566,26 +566,33 @@ function HeroSec() {
                 />
               </svg>
             </div>
-            <motion.img
+            <motion.div
               variants={FadeUp(0.5)}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              title="Medical Clinics Management Software"
-              fetchpriority="high"
-              width={1200}
-              height="541.4732403924598"
-              decoding="async"
-              data-nimg={1}
-              className="object-bottom object-contain transition-opacity duration-1000 slide-b z-10 opacity-100"
-              style={{ color: "transparent" }}
-              src={images[currentIndex]}
-              alt={`Slide ${currentIndex + 1}`}
-            />
+              viewport={{ once: true }}>
+              <motion.img
+                key={currentIndex} // Change the key to force a re-render when the image changes
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                title="Medical Clinics Management Software"
+                fetchpriority="high"
+                width={1200}
+                height="541.4732403924598"
+                decoding="async"
+                data-nimg={1}
+                className="object-bottom object-contain slide-b z-10 rounded-xl shadow-lg"
+                initial={{ opacity: 0 }} // Start with opacity 0 (hidden)
+                animate={{ opacity: 1 }} // Animate to opacity 1 (visible)
+                exit={{ opacity: 0 }} // Exit with opacity 0 (fade out)
+                transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition with 1 second duration
+              />
+            </motion.div>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
 export default HeroSec;
