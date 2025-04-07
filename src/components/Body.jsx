@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FadeUp } from "../utility/animation";
 import { FadeLeft } from "../utility/animation";
 import HeroSec from "./HeroSec";
+import Sec4 from "./Sec4";
 function Body() {
   return (
     <div className="h-screen">
@@ -9,9 +10,9 @@ function Body() {
       <Sec2 />
       {/* <div className="h-1/6 w-full md:relative -z-10 hidden md:block gradientSplit" /> */}
 
-    {/*   <div className="h-1/6 w-full md:relative -z-10 md:block hidden rotate-180 gradientSplit" /> */}
+      {/*   <div className="h-1/6 w-full md:relative -z-10 md:block hidden rotate-180 gradientSplit" /> */}
 
-      <Sec3  />
+      <Sec3 />
       <Sec4 />
       <Sec5 />
 
@@ -23,7 +24,6 @@ function Body() {
     </div>
   );
 }
-
 
 function Sec2() {
   return (
@@ -138,12 +138,11 @@ function Sec3() {
       <div className="grow bg-[#F7F9FC]" />
       <div className="grow-[2] bg-[#0B3E7A]" />
       <motion.div
-      variants={FadeLeft(0.1)}
-      initial="hidden"
-      whileInView="visible"
-      className="absolute w-screen top-[5%] left-0 overflow-x-auto">
+        variants={FadeLeft(0.1)}
+        initial="hidden"
+        whileInView="visible"
+        className="absolute w-screen top-[5%] left-0 overflow-x-auto">
         {" "}
-        
         <div className="flex gap-0 md:gap-5 h-full snap-mandatory snap-x overflow-x-scroll md:px-5 lg:px-40 pb-1">
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
             <div>
@@ -315,241 +314,7 @@ function Sec3() {
     </div>
   );
 }
-function Sec4() {
-  return (
-    <div id="features" className="h-full md:h-[100%] 4xl:h-[60%] bg-[#0B3E7A]">
-      <h2 className="text-4xl md:text-5xl md:px-0 px-5 w-full text-center whitespace-pre-wrap grow flex justify-center items-center text-white font-lora font-bold">
-        Powerful features <br className="hidden md:block" />
-        at your service.
-      </h2>
-      <div className="md:mx-20 md:flex md:flex-row md:mt-10 rounded-3xl md:bg-[#174A86] md:overflow-hidden py-7 px-8 md:px-16 h-[75%]">
-        <div className="grow-[1] w-full md:w-2/6 h-full mt-10">
-          <div className="flex h-1 mb-5 items-center">
-            <div className="h-full w-1/4 bg-[#48BDFF] rounded-full mr-2 ease-in transition-all duration-300 opacity-100 h-1.5" />
-            <div className="h-full w-1/4 bg-[#48BDFF] rounded-full mr-2 ease-in transition-all duration-300 opacity-20" />
-            <div className="h-full w-1/4 bg-[#48BDFF] rounded-full mr-2 ease-in transition-all duration-300 opacity-20" />
-            <div className="h-full w-1/4 bg-[#48BDFF] rounded-full mr-2 ease-in transition-all duration-300 opacity-20" />
-          </div>
-          <h3 className="text-2xl md:text-5xl text-white font-lora font-medium mb-5">
-            Manage every aspect of your practice
-          </h3>
-          <div className="h-full">
-            <div className="h-1/2 grow-[3] relative flex  md:hidden">
-              {/*   */}
-              <div className="w-full absolute transition-all duration-500 top-0 h-full opacity-100 animate-[slideInFromBottom_700ms_ease-in-out">
-                {/*]  */}
-                <img
-                  alt="image"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="fill"
-                  className="object-contain"
-                  style={{
-                    position: "absolute",
-                    height: "100%",
-                    width: "100%",
-                    left: "0",
-                    top: "0",
-                    right: "0",
-                    bottom: "0",
-                    color: "transparent",
-                  }}
-                  sizes="100vw"
-                  src="../../public/images/Patients.png"
-                />
-              </div>
-              <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-                <img
-                  alt="image"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="fill"
-                  className="object-contain"
-                  style={{
-                    position: "absolute",
-                    height: "100%",
-                    width: "100%",
-                    left: "0",
-                    top: "0",
-                    right: "0",
-                    bottom: "0",
-                    color: "transparent",
-                  }}
-                  sizes="100vw"
-                  src="../../public/images/Patients.png"
-                />
-              </div>
-              <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-                <img
-                  alt="image"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="fill"
-                  className="object-contain"
-                  style={{
-                    position: "absolute",
-                    height: "100%",
-                    width: "100%",
-                    left: "0",
-                    top: "0",
-                    right: "0",
-                    bottom: "0",
-                    color: "transparent",
-                  }}
-                  sizes="100vw"
-                  src="../../public/images/Patients.png"
-                />
-              </div>
-              <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-                <img
-                  alt="image"
-                  loading="lazy"
-                  decoding="async"
-                  data-nimg="fill"
-                  className="object-contain"
-                  style={{
-                    position: "absolute",
-                    height: "100%",
-                    width: "100%",
-                    left: "0",
-                    top: "0",
-                    right: "0",
-                    bottom: "0",
-                    color: "transparent",
-                  }}
-                  sizes="100vw"
-                  src="../../public/images/Patients.png"
-                />
-              </div>
-            </div>
-            <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-[25%] 3xl:h-[20%] mt-5">
-              <h3 className="text-xl text-white mb-2 transition-all font-semibold leading-normal">
-                Patient management
-              </h3>
-              <p className="h-full transition-all duration-500 text-white">
-                Experience seamless patient and customer management with our
-                innovative tools
-              </p>
-            </div>
-            <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-0 md:h-[10%] opacity-70 bg-opacity-0 overflow-hidden md:flex flex-col">
-              <h3 className="text-xl text-white mb-2 transition-all font-semibold leading-[0] md:leading-normal">
-                Appointment management
-              </h3>
-              <p className="h-0 overflow-y-hidden transition-all duration-500 text-white">
-                Schedule and manage your appointments and sessions and allow
-                your customers to book online
-              </p>
-            </div>
-            <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-0 md:h-[10%] opacity-70 bg-opacity-0 overflow-hidden md:flex flex-col">
-              <h3 className="text-xl text-white mb-2 transition-all font-semibold leading-[0] md:leading-normal">
-                Accounting &amp; Statistics
-              </h3>
-              <p className="h-0 overflow-y-hidden transition-all duration-500 text-white">
-                Fully integrated accounting and reporting tools with one-click
-                report generation for you to track where every cent goes
-              </p>
-            </div>
-            <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-0 md:h-[10%] opacity-70 bg-opacity-0 overflow-hidden md:flex flex-col">
-              <h3 className="text-xl text-white mb-2 transition-all font-semibold leading-[0] md:leading-normal">
-                Reminders
-              </h3>
-              <p className="h-0 overflow-y-hidden transition-all duration-500 text-white">
-                Seemless Email, Whatsapp and SMS reminders integration for your
-                customers to always be on-time
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="h-full grow-[3] hidden md:flex relative">
-          <div className="w-full absolute transition-all duration-500 top-0 h-full opacity-100 animate-[slideInFromBottom_700ms_ease-in-out]">
-            <img
-              alt="image"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              className="object-contain"
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "100%",
-                left: "0",
-                top: "0",
-                right: "0",
-                bottom: "0",
-                color: "transparent",
-              }}
-              sizes="100vw"
-              src="../../public/images/Patients.png"
-            />
-          </div>
-          <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-            <img
-              alt="image"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              className="object-contain"
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "100%",
-                left: "0",
-                top: "0",
-                right: "0",
-                bottom: "0",
-                color: "transparent",
-              }}
-              sizes="100vw"
-              src="../../public/images/Patients.png"
-            />
-          </div>
-          <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-            <img
-              alt="image"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              className="object-contain"
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "100%",
-                left: "0",
-                top: "0",
-                right: "0",
-                bottom: "0",
-                color: "transparent",
-              }}
-              sizes="100vw"
-              src="../../public/images/Patients.png"
-            />
-          </div>
-          <div className="w-full absolute transition-all duration-500 top-0 h-full ">
-            <img
-              alt="image"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              className="object-contain"
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "100%",
-                left: "0",
-                top: "0",
-                right: "0",
-                bottom: "0",
-                color: "transparent",
-              }}
-              sizes="100vw"
-              src="../../public/images/Patients.png"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+
 function Sec5() {
   return (
     <div className="md:h-[110%] 4xl:h-[65%] flex-col flex bg-[#0B3E7A] pt-10">
