@@ -47,7 +47,8 @@ function Sec2() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white">
+                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -65,7 +66,8 @@ function Sec2() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white">
+                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -83,7 +85,8 @@ function Sec2() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white">
+                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -141,7 +144,8 @@ function Sec3() {
         variants={FadeLeft(0.1)}
         initial="hidden"
         whileInView="visible"
-        className="absolute w-screen top-[5%] left-0 overflow-x-auto">
+        className="absolute w-screen top-[5%] left-0 overflow-x-auto"
+      >
         {" "}
         <div className="flex gap-0 md:gap-5 h-full snap-mandatory snap-x overflow-x-scroll md:px-5 lg:px-40 pb-1">
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
@@ -364,7 +368,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -384,7 +389,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -404,7 +410,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -421,7 +428,8 @@ function Sec5() {
                     aria-label="Handcrafted to maintain your Medical Clinic - Kliniki For Medical Clinics"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Medical Clinics"
-                    href="business/medical-clinics">
+                    href="business/medical-clinics"
+                  >
                     Kliniki For Medical Clinics
                   </a>
                 </div>
@@ -469,7 +477,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -487,7 +496,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -507,7 +517,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -524,7 +535,8 @@ function Sec5() {
                     aria-label="The best tools for the best dentists - Kliniki For Dental Clinics"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Dental Clinics"
-                    href="business/dental-clinics">
+                    href="business/dental-clinics"
+                  >
                     Kliniki For Dental Clinics
                   </a>
                 </div>
@@ -583,7 +595,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -603,7 +616,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -624,7 +638,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -641,7 +656,8 @@ function Sec5() {
                     aria-label="Your beauty clinic, managed - Kliniki For Beauty Clinics"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Beauty Clinics"
-                    href="business/beauty-clinics">
+                    href="business/beauty-clinics"
+                  >
                     Kliniki For Beauty Clinics
                   </a>
                 </div>
@@ -700,7 +716,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -718,7 +735,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -739,7 +757,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -754,7 +773,8 @@ function Sec5() {
                     aria-label="Your law practice is taken care of with Kliniki - Kliniki For Lawyer Practices"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Lawyer Practices"
-                    href="business/lawyer-practices">
+                    href="business/lawyer-practices"
+                  >
                     Kliniki For Lawyer Practices
                   </a>
                 </div>
@@ -812,7 +832,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -830,7 +851,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -850,7 +872,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -868,7 +891,8 @@ function Sec5() {
                     aria-label="You train, leave the management to us - Kliniki For Personal Trainers"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Personal Trainers"
-                    href="business/personal-trainers">
+                    href="business/personal-trainers"
+                  >
                     Kliniki For Personal Trainers
                   </a>
                 </div>
@@ -927,7 +951,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -947,7 +972,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -968,7 +994,8 @@ function Sec5() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 fill-green-600 text-white">
+                        className="w-6 h-6 fill-green-600 text-white"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -985,7 +1012,8 @@ function Sec5() {
                     aria-label="Focus on your drawing, and leave to rest to us - Kliniki For Tattoo Shops"
                     className="bg-white text-[#0B3E7A] px-8 py-2 rounded font-semibold hover:opacity-75"
                     title="Kliniki For Tattoo Shops"
-                    href="business/tattoo-shops">
+                    href="business/tattoo-shops"
+                  >
                     Kliniki For Tattoo Shops
                   </a>
                 </div>
@@ -1056,7 +1084,8 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx={12} cy={12} r={10} />
               <polyline points="12 6 12 12 16 14" />
             </svg>
@@ -1079,7 +1108,8 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
             </svg>
             <h3 className="text-lg font-semibold mb-2 capitalize">
@@ -1101,7 +1131,8 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
               <circle cx={9} cy={7} r={4} />
               <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -1144,7 +1175,8 @@ function Sec7() {
             viewBox="0 0 377 377"
             fill="none"
             className="absolute -top-[5%] right-[20%] z-10"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle
               opacity="0.6"
               cx="188.5"
@@ -1385,7 +1417,8 @@ function Sec7() {
               </div> */}
             <a
               title="Click to view HBTech's website"
-              href="https://www.hb-tech.org">
+              href="https://www.hb-tech.org"
+            >
               <div className="py-8 border-t text-center mt-10 md:mt-0 text-[#4B5563] text-xs">
                 All rights reserved © 2023 HBTech
               </div>
