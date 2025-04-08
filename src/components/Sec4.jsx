@@ -60,7 +60,7 @@ function Sec4() {
   };
 
   return (
-    <div className="h-full md:h-[100%] 4xl:h-[60%] bg-[#0B3E7A]">
+    <div id="features" className="h-full md:h-[100%] 4xl:h-[60%] bg-[#0B3E7A]">
       <h2 className="text-4xl md:text-5xl md:px-0 px-5 w-full text-center whitespace-pre-wrap grow flex justify-center items-center text-white font-lora font-bold">
         Powerful features <br className="hidden md:block" />
         at your service.
@@ -100,7 +100,8 @@ function Sec4() {
                         ? "bg-[#174A86] opacity-100"
                         : "bg-[#0B3E7A] opacity-60"
                     }`}
-                    onClick={() => handleSelect(index)}>
+                    onClick={() => handleSelect(index)}
+                  >
                     <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-[25%] 3xl:h-[20%] mt-5">
                       <p className="text-xl text-white font-semibold mb-1 ">
                         {feature.title}
