@@ -28,8 +28,8 @@ function HeroSec() {
           <h1 className="my-auto leading-[57px] md:leading-[77px] lg:leading-[87px] xl:leading-[97px] capitalize w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] font-lora font-semibold">
             The&nbsp;
             <span className="underline font-bold underline-offset-8">Only</span>
-            &nbsp;<span className="bg-pan">management platform</span>&nbsp; you
-            will ever need
+            &nbsp;<span className="bg-pan">Healthcare management platform</span>
+            &nbsp; you will need
           </h1>
         </div>
         <div
