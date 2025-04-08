@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="sm:px-16 md:px-24 lg:px-36 shadow-md bg-[#0B3E7A] text-white flex justify-between items-center p-2 w-full sticky top-0 z-50">
+    <div className="sm:px-16 md:px-24 lg:px-36 shadow-md bg-[#0B3E7A] text-white flex justify-between items-center p-2 w-full sticky top-0 z-50 h-[91px]">
       <div className="md:hidden">
         <div className="cursor-pointer px-5">
           <svg
@@ -36,7 +36,7 @@ function Header() {
               src="_next/image?url=%2Fkliniki.gif&w=384&q=75"
             />
           </div>
-          <div className="flex flex-col h-full pl-5 pt-5 gap-10 text-white">
+          <div className="flex flex-col h-full pl-5 pt-5 gap-10 text-white font-manrope">
             <a className="text-xl" href="#features">
               Features
             </a>
@@ -125,7 +125,7 @@ function Header() {
             aria-label="Start for Free"
             title="Start for Free"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2  font-manrope">
               Start for Free{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
