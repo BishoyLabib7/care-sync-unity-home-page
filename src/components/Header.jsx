@@ -40,8 +40,8 @@ function Header() {
             <a className="text-xl" href="#features">
               Features
             </a>
-            <a className="text-xl" href="#pricing">
-              Pricing
+            <a className="text-xl" href="#fields">
+              Fields
             </a>
             <a
               className="text-xl"
@@ -92,11 +92,11 @@ function Header() {
           Features
         </a>
         <a
-          href="#pricing"
-          aria-label="Pricing"
+          href="#fields"
+          aria-label="    Fields"
           title="View the Pricing section"
         >
-          Pricing
+          Fields
         </a>
         <a
           aria-label="Resell"
@@ -106,11 +106,11 @@ function Header() {
           Resell
         </a>
         <a
-          href="#faq"
+          href="#contact-us"
           aria-label="Frequently Asked Questions (FAQ)"
           title="View the Frequently Asked Questions section"
         >
-          FAQ
+          Contact Us
         </a>
       </div>
       <div className="grow flex-row-reverse flex">
