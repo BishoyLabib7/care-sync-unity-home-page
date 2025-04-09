@@ -34,8 +34,8 @@ function Sec2() {
             Handcrafted to meet all your needs
           </h2>
           <p className="mb-5 md:mb-10 md:text-xl whitespace-pre-wrap">
-            One Solution, one software. Trusted by the best in the medical,
-            tattoo and beauty industries.
+            One Solution, one software. Trusted by the best in the medical field
+            such as hospitals, pharmacies , labortories and doctors
           </p>
           <div className="lg:mt-20">
             <ul className="md:text-lg mb-10 font-semibold">
@@ -75,7 +75,7 @@ function Sec2() {
                     />
                   </svg>
                 </div>
-                <h3>Fully encrypted and HIPAA compliant clinic software</h3>
+                <h3>Fully encrypted and unified software</h3>
               </li>
               <li className="flex">
                 <div>
@@ -96,11 +96,49 @@ function Sec2() {
                 </div>
                 <h3>Available on all major devices and operating systems</h3>
               </li>
+              <li className="flex">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                    />
+                  </svg>
+                </div>
+                <h3>Ensuring smooth and simplified user experience</h3>
+              </li>
+              <li className="flex">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6 mr-5 mb-10 fill-green-600 text-white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                    />
+                  </svg>
+                </div>
+                <h3>Providing suitable training and support to users</h3>
+              </li>
             </ul>
             <a title="login" href="https://caresyncunity.live/login">
               <button className="w-full md:w-[80%] lg:w-[80%] xl:w-[52%] bg-[#0B3E7A] text-center items-center transition-all uppercase text-white font-semibold rounded-md p-4 border-gray-200 hover:opacity-90">
                 <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING" />
-                Get Started free
+                Get Started
               </button>
             </a>
           </div>
@@ -153,15 +191,15 @@ function Sec3() {
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
             <div>
               <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">
-                The All-In-One Solution for Streamlining Medical Clinics
+                Unity Health Care
               </h3>
               <p>
-                Kliniki is an amazing all-in-one system solution for medical
-                clinics that gives you everything you need regarding the patient
-                journey, assessment and treatment plans, in addition to the
-                accounting part along with all the statistics needed to create a
-                better place for continuous and successful results and follow
-                ups
+                Using a system within Unity Health Care would likely find it
+                integrated with electronic health records (EHRs) to manage
+                patient data, schedule appointments, and communicate with
+                patients and other providers. Feedback might relate to the
+                efficiency of the system, its user-friendliness, and its impact
+                on workflow and patient care
               </p>
             </div>
             <div className="mt-5 flex align-middle items-center">
@@ -184,23 +222,25 @@ function Sec3() {
                     color: "transparent",
                   }}
                   sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
-                  src="/images/PhysioMove.webp"
+                  src="https://res.cloudinary.com/deqvr46ch/image/upload/v1743593815/care-sync/profile-photos/fe4j4z3sboujt35cu2xg.jpg"
                 />
               </div>
               <div>
-                <div className="text-lg font-semibold">Dr. Kamal Al Kassir</div>
-                <div className="font-semibold">PhysioMove</div>
+                <div className="text-lg font-semibold">George Philip</div>
+                <div className="font-semibold">Cardiologist</div>
               </div>
             </div>
           </div>
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
             <div>
               <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">
-                The User-Friendly App with Exceptional Customer Support
+                More Coordinated Care
               </h3>
               <p>
-                I love the app, it's easy to use and the Kliniki team is always
-                here to help
+                I feel like my different doctors are finally on the same page.
+                They seem to have access to the same information, which makes my
+                care feel more seamless. The platform makes it easier for me to
+                track my medications and any at-home care instructions.
               </p>
             </div>
             <div className="mt-5 flex align-middle items-center">
@@ -223,26 +263,26 @@ function Sec3() {
                     color: "transparent",
                   }}
                   sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
-                  src="/images/UHeal.webp"
+                  src="https://res.cloudinary.com/deqvr46ch/image/upload/v1743424812/care-sync/profile-photos/im1qoxutnibwsei7fdhe.jpg"
                 />
               </div>
               <div>
-                <div className="text-lg font-semibold">Mona Tauk</div>
-                <div className="font-semibold">UHeal</div>
+                <div className="text-lg font-semibold">Barsoum Adly</div>
+                <div className="font-semibold">Patient</div>
               </div>
             </div>
           </div>
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
             <div>
               <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">
-                The platform I was looking for
+                Enhanced Efficiency and Workflow
               </h3>
               <p>
-                Law firms are looking for efficient law practice management
-                tools and this software is perfect. It's customizable and
-                user-friendly making it an ideal choice. I feel like I am making
-                a meaningful impact in the legal industry while building a
-                profitable business.
+                he system has streamlined administrative tasks, such as
+                scheduling, referrals, and documentation, freeing up staff time
+                to focus more on direct patient care. Real-time alerts and
+                notifications for critical patient events or tasks have improved
+                response times and proactive care management.
               </p>
             </div>
             <div className="mt-5 flex align-middle items-center">
@@ -265,25 +305,25 @@ function Sec3() {
                     color: "transparent",
                   }}
                   sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
-                  src="/images/Law.jpeg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT23gnoIRErwkM0xO--XSaGVrgnoU-VaDEgmw&s"
                 />
               </div>
               <div>
-                <div className="text-lg font-semibold">Mark Ramirez</div>
-                <div className="font-semibold">LawPro Solutions</div>
+                <div className="text-lg font-semibold">Dr. Khaled Mohamed</div>
+                <div className="font-semibold">Al Abd Dental Clinic</div>
               </div>
             </div>
           </div>
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
             <div>
               <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">
-                Great software. Would recommend to all doctors
+                Improved Inventory Management
               </h3>
               <p>
-                Very easy to use platform. The support is great and available
-                24/7. Switching to Kliniki helped me save hundreds of dollars
-                and become more efficient in how I manage my clinic and help my
-                patients
+                The platform integrates inventory data with prescription
+                information, it helps optimize stock levels and reduce waste.
+                Data on frequently prescribed medications and patient needs
+                could inform purchasing decisions.
               </p>
             </div>
             <div className="mt-5 flex align-middle items-center">
@@ -306,12 +346,54 @@ function Sec3() {
                     color: "transparent",
                   }}
                   sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
-                  src="/images/Clinic Dr. Jabbour.jpeg"
+                  src="https://gludo.org/U/d/2024_09_02/l-pZzgP18sZT275RJ779jS-1725248150.jpg"
                 />
               </div>
               <div>
-                <div className="text-lg font-semibold">Dr. Charlie Jabbour</div>
-                <div className="font-semibold">Clinic Dr. Jabbour</div>
+                <div className="text-lg font-semibold">El Ezaby </div>
+                <div className="font-semibold">Pharmacy</div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
+            <div>
+              <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">
+                Seamless Results Reporting
+              </h3>
+              <p>
+                The platform facilitates the timely and secure electronic
+                delivery of test results to ordering physicians and other
+                authorized healthcare providers. Integration with billing
+                systems through the platform can streamline the process of
+                generating and submitting claims for laboratory services.
+              </p>
+            </div>
+            <div className="mt-5 flex align-middle items-center">
+              <div className="w-16 h-16 relative mr-3">
+                <img
+                  alt="Dr. Charlie Jabbour at Clinic Dr. Jabbour"
+                  title="Dr. Charlie Jabbour at Clinic Dr. Jabbour"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  className="object-cover -z-0 rounded-full"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    left: "0",
+                    top: "0",
+                    right: "0",
+                    bottom: "0",
+                    color: "transparent",
+                  }}
+                  sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
+                  src="https://res.cloudinary.com/deqvr46ch/image/upload/v1741634894/care-sync/profile-photos/mnfblistxm7sxztczoq9.jpg"
+                />
+              </div>
+              <div>
+                <div className="text-lg font-semibold">Royal </div>
+                <div className="font-semibold">Laboratory</div>
               </div>
             </div>
           </div>
@@ -321,6 +403,63 @@ function Sec3() {
   );
 }
 
+const fields = [
+  {
+    title: "The best tools for doctors",
+    details: "All the tools a doctor would need to manage their patients",
+    features: [
+      "Pie chart for your hospitals, clinic",
+      "Providing dashboards that show their timetables for remainders",
+      "Providing current patients’ status and their recent analysis results",
+    ],
+    image: "/images/Medical.png",
+    button: "Register Now",
+  },
+
+  {
+    title: "Your healthcare process is taken care of with Care Sync Unity",
+    details:
+      "We take care of everything a patient might need for their healthcare to help them take best service",
+    features: [
+      "Providing a real time counter of their turn",
+      "Determining all the nearest healthcare providers to their region with less prices",
+      "Providing a list of top nearest and eligible and qualified doctors to their region",
+    ],
+    image: "/images/patient.png",
+    button: "Register Now",
+  },
+  {
+    title: "Handcrafted to maintain your Medical Clinic",
+    details: "All the tools you need are built into Care Sync Unity",
+    features: [
+      "Helping them to increase their profit.",
+      "Make small clinics visible for both patients and doctors",
+      "Providing an organized and secure system to deal with patients and doctors",
+    ],
+    image: "/images/clinic.png",
+    button: "Register Now",
+  },
+  {
+    title: "You register, leave the management to us",
+    details: "Provieding trainer needs to manage their business",
+    features: [
+      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
+      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
+    ],
+    image: "/images/Medical.png",
+    button: "Register Now",
+  },
+  {
+    title: "You register, leave the management to us",
+    details: "Provieding trainer needs to manage their business",
+    features: [
+      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
+      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
+    ],
+    image: "/images/Medical.png",
+    button: "Register Now",
+  },
+];
 function Sec5() {
   return (
     <div
@@ -331,28 +470,27 @@ function Sec5() {
         Specific features <br className="hidden md:block" />
         for your field of work
       </h2>
-      <div className="mt-6 flex flex-wrap md:flex-nowrap bg-[#174A86] max-w-full md:w-2/3 justify-between mx-2 md:mx-auto py-2 px-2 rounded-md md:rounded-full relative">
-        <div className="w-1/6 hidden md:inline rounded md:rounded-full h-[90%] top-1 bg-gradient-to-r from-[#3165EB] to-[#2F9CEB] absolute transition-all duration-300 ease-in" />
-        <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-[#1d6699] md:bg-transparent font-semibold text-xl">
-          Medical
+      <div className="mt-6 flex flex-wrap md:flex-nowrap bg-[#174A86] max-w-full md:w-2/3 justify-between mx-2 md:mx-auto py-2 px-1 rounded-md md:rounded-full relative">
+        <div className="w-1/6 hidden left-7 md:inline rounded md:rounded-full h-[90%] top-1 bg-gradient-to-r from-[#3165EB] to-[#2F9CEB] absolute transition-all duration-300 ease-in" />
+
+        <h3 className="p-4  cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-[#1d6699] md:bg-transparent font-semibold text-xl">
+          Doctor
         </h3>
         <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-none font-medium text-base">
-          Dental
+          Patient
         </h3>
         <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-none font-medium text-base">
-          Beauty
+          Clinic
         </h3>
         <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-none font-medium text-base">
-          Law
+          Pharmacy
         </h3>
         <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-none font-medium text-base">
-          Sports
-        </h3>
-        <h3 className="p-4 cursor-pointer rounded md:rounded-full text-white transition-all w-1/3 md:w-full text-center ease-in duration-300 z-10 bg-none font-medium text-base">
-          Tattoo
+          Laboratory
         </h3>
       </div>
       <div className="mx-2 md:mx-20 mt-10 rounded md:rounded-3xl bg-[#174A86] py-7 h-[70%] md:h-[60%] overflow-hidden">
+        {/* fields object */}
         <div className="justify-between w-[600%] flex h-full transition-all duration-1000">
           <div className="w-full">
             <div className="flex flex-col-reverse md:flex-row px-5 md:px-16 h-full w-[100%] transition-opacity duration-100 opacity-100">
@@ -1066,7 +1204,7 @@ function Sec5() {
 
 function Sec6() {
   return (
-    <section className="w-full py-12">
+    <section id="pricing" className="w-full py-12">
       <div className="container min-w-full px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl font-semibold text-zinc-900">
@@ -1231,7 +1369,7 @@ function Sec7() {
           <h3 className="text-xl font-lora font-semibold my-5 text-center">
             Let's build your dream
           </h3>
-          <div className="bg-[#f4f4f5] p-5 rounded-md w-full md:w-1/2 lg:w-1/3 md:mb-[10%]">
+          <div className=" bg-zinc-100 rounded-lg p-8 shadow-sm  w-full md:w-1/2 lg:w-1/3 md:mb-[10%]">
             <form action="/api/contact" method="POST">
               <div className="mb-5">
                 <div className="text-sm font-semibold  font-inter leading-[24px] mb-1">
@@ -1242,7 +1380,7 @@ function Sec7() {
                     type="text"
                     placeholder="Your name"
                     id="name"
-                    className="p-3 pl-5 w-full rounded-md border-2 disabled:bg-inherit"
+                    className="p-3 pl-5 w-full rounded-md border-2 disabled:bg-amber-50"
                     name="name"
                     fdprocessedid="2y6fk5"
                   />
@@ -1495,12 +1633,12 @@ function Sec7() {
                   </div>
                   <div className="pb-2 font-bold">
                     <a
-                      href="business/resell"
+                      href="#pricing"
                       title="View the Pricing section"
                       className="hover:underline"
                       aria-label="The Kliniki Platform Pricing"
                     >
-                      Resell
+                      Pricing
                     </a>
                   </div>
                   <div className="pb-2 font-bold">
