@@ -46,9 +46,9 @@ function Header() {
             <a
               className="text-xl"
               title="Click to go to the Resellers page"
-              href="/resell"
+              href="#pricing"
             >
-              Resell
+              Pricing
             </a>
             <a className="text-xl" href="#faq" title="Open website menu">
               FAQ
@@ -101,9 +101,9 @@ function Header() {
         <a
           aria-label="Resell"
           title="Click to go to the Resellers page"
-          href="/resell"
+          href="#pricing"
         >
-          Resell
+          Pricing
         </a>
         <a
           href="#contact-us"
@@ -126,7 +126,7 @@ function Header() {
             title="Start for Free"
           >
             <div className="flex items-center gap-2  font-manrope">
-              Start for Free{" "}
+              Start now{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
