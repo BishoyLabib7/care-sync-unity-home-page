@@ -27,14 +27,11 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 8px;
   margin: 20px;
 }
-.scroll {
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
+
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -45,10 +42,18 @@ body {
   background: #2e37a4;
   border-radius: 10px;
 }
+::-webkit-scrollbar-thumb:horizontal {
+  background: #ffffff8f;
+  border-radius: 10px;
+}
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2e37a4;
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #fff;
+  border-radius: 10px;
 }
 
 .bg-pan {
