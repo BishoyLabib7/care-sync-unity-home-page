@@ -6,22 +6,23 @@ const features = [
   {
     title: "Patient Management",
     description: "Seamless tools for handling patients & customers",
-    image: "/images/Patients.png",
+    image: "/images/appointments.png",
   },
   {
     title: "Appointment Scheduling",
     description: "Book, track, and manage appointments with ease",
-    image: "/images/image (7).png",
+    image: "/images/patient-appointments.png",
   },
   {
     title: "Accounting & Statistics",
     description: "Track income, expenses & generate reports",
-    image: "/images/Sec4.png",
+    image: "/images/statistics.png",
   },
   {
-    title: "Reminders",
-    description: "Send reminders via Email, WhatsApp & SMS",
-    image: "/images/PhysioMove.webp",
+    title: "Online chatting",
+    description:
+      "Seemless Email, platform online chat and reminders integration for your users to always be on-time",
+    image: "/images/chatting.png",
   },
 ];
 function ProgressBar({ activeIndex = 1 }) {
@@ -96,17 +97,23 @@ function Sec4() {
                   <div
                     key={index}
                     className={`p-4  rounded-lg cursor-pointer transition-all duration-300 ${
-                      currentIndex === index
+                      currentIndex !== index
                         ? "bg-[#174A86] opacity-100"
-                        : "bg-[#0B3E7A] opacity-60"
+                        : "bg-[#0B3E7A] opacity-100"
                     }`}
                     onClick={() => handleSelect(index)}
                   >
-                    <div className="md:p-3 md:px-5 transition-all ease-in-out bg-[#0B3E7A] rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-[25%] 3xl:h-[20%] mt-5">
+                    <div className="md:p-3 md:px-5 transition-all ease-in-out rounded-lg cursor-pointer md:mb-1 md:mt-0 w-full duration-500 h-[25%] 3xl:h-[20%] mt-5">
                       <p className="text-xl text-white font-semibold mb-1 ">
                         {feature.title}
                       </p>
-                      <p className="   text-white">{feature.description}</p>
+                      <p
+                        className={`text-white ${
+                          index === currentIndex ? "" : "hidden"
+                        }`}
+                      >
+                        {feature.description}
+                      </p>
                     </div>
                   </div>
                 ))}
