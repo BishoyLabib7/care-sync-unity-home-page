@@ -40,7 +40,7 @@ function ProgressBar({ activeIndex = 1 }) {
   );
 }
 
-function Sec4() {
+function MiddleFeaturesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [manualSelect, setManualSelect] = useState(false);
 
@@ -143,7 +143,8 @@ function Sec4() {
 
 
 
-export default Sec4;
+export default MiddleFeaturesSection;
+
 function Sec45() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [manualSelect, setManualSelect] = useState(false);

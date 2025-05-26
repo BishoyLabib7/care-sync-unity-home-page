@@ -146,7 +146,7 @@ const Data = [
     </div>
   );
 } */
-function Sec5() {
+function SpecializedFeaturesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [manualSelect, setManualSelect] = useState(false);
 
@@ -269,7 +269,7 @@ function SVGIcon() {
   );
 }
 
-export default Sec5;
+export default SpecializedFeaturesSection;
 
 {
   /*      <div className="w-full">
