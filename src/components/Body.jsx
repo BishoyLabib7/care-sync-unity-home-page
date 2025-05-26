@@ -26,7 +26,7 @@ function Body() {
   );
 }
 
-function Sec2() {
+/* function Sec2() {
   return (
     <div className="md:h-full bg-[#F7F9FC] md:px-40 md:pt-5 flex md:flex-row flex-col-reverse pb-20 md:pb-0">
       <div className="grow my-auto w-full">
@@ -174,6 +174,87 @@ function Sec2() {
       </div>
     </div>
   );
+} */
+
+function Sec2() {
+  return (
+    <section
+      className="bg-[#F7F9FC] pt-10 pb-20 md:pt-16 md:pb-24 px-5 md:px-20 lg:px-40 flex flex-col-reverse md:flex-row items-center gap-10"
+      style={{ scrollMarginTop: "80px" }}
+    >
+      {/* النص */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-lora font-semibold mb-6 md:mb-10 text-[#0B3E7A] leading-tight">
+          Handcrafted to meet all your needs
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-12 text-gray-700 leading-relaxed">
+          One Solution, one software. Trusted by the best in the medical field
+          such as hospitals, pharmacies, laboratories, and doctors.
+        </p>
+
+        <ul className="space-y-5 text-gray-800 font-semibold md:text-lg">
+          {[
+            "Data backed up to the cloud",
+            "Fully encrypted and unified software",
+            "Available on all major devices and operating systems",
+            "Ensuring smooth and simplified user experience",
+            "Providing suitable training and support to users",
+          ].map((text, idx) => (
+            <li key={idx} className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 mr-4 text-green-600 flex-shrink-0"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                />
+              </svg>
+              <span>{text}</span>
+            </li>
+          ))}
+        </ul>
+
+        <a
+          href="https://caresyncunity.live/login"
+          title="Get Started"
+          className="mt-8 md:mt-12 inline-block w-full md:w-[80%] lg:w-[60%]"
+        >
+          <button className="w-full bg-[#0B3E7A] text-white font-semibold uppercase rounded-md py-4 hover:opacity-90 transition">
+            Get Started
+          </button>
+        </a>
+      </div>
+
+      {/* الصورة */}
+      <div className="w-full md:w-1/2 flex justify-center items-center max-h-[500px]">
+        <motion.img
+          variants={FadeUp(0.5)}
+          initial="hidden"
+          whileInView="visible"
+          alt="Handcrafted solution"
+          loading="lazy"
+          decoding="async"
+          src="/images/Sec2.png"
+          className="
+            object-contain
+            w-full
+            max-h-[250px]  /* للموبايل الصغير */
+            sm:max-h-[350px] /* شاشات صغيرة */
+            md:max-h-[400px] /* شاشات متوسطه (iPad) */
+            lg:max-h-[500px] /* الشاشات الكبيرة */
+          "
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          style={{ position: "relative", color: "transparent" }}
+        />
+      </div>
+    </section>
+  );
 }
 
 function Sec3() {
@@ -185,8 +266,7 @@ function Sec3() {
         variants={FadeLeft(0.1)}
         initial="hidden"
         whileInView="visible"
-        className="absolute w-screen top-[5%] left-0 overflow-x-auto"
-      >
+        className="absolute w-screen top-[5%] left-0 overflow-x-auto">
         {" "}
         <div className="flex gap-0 md:gap-5 h-full snap-mandatory snap-x overflow-x-scroll md:px-5 lg:px-40 pb-1">
           <div className="bg-white shadow-md rounded-lg py-6 p-9 mx-3 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
@@ -404,6 +484,60 @@ function Sec3() {
   );
 }
 
+function Card({ title, text, imgSrc, alt, name, role }) {
+  return (
+    <div className="bg-white shadow-md rounded-lg py-6 px-9 mx-2 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
+      <div>
+        <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">{title}</h3>
+        <p>{text}</p>
+      </div>
+      <div className="mt-5 flex items-center">
+        <div className="w-16 h-16 relative mr-3 rounded-full overflow-hidden">
+          <img
+            alt={alt}
+            title={alt}
+            loading="lazy"
+            decoding="async"
+            className="object-cover w-full h-full"
+            src={imgSrc}
+          />
+        </div>
+        <div>
+          <div className="text-lg font-semibold">{name}</div>
+          <div className="font-semibold">{role}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TestimonialCard({ title, text, imgSrc, alt, name, role }) {
+  return (
+    <div className="bg-white shadow-md rounded-lg py-6 px-9 mx-2 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
+      <div>
+        <h3 className="text-xl text-[#0B3E7A] font-semibold mb-5">{title}</h3>
+        <p>{text}</p>
+      </div>
+      <div className="mt-5 flex items-center">
+        <div className="w-16 h-16 relative mr-3 rounded-full overflow-hidden">
+          <img
+            alt={alt}
+            title={alt}
+            loading="lazy"
+            decoding="async"
+            className="object-cover w-full h-full"
+            src={imgSrc}
+          />
+        </div>
+        <div>
+          <div className="text-lg font-semibold">{name}</div>
+          <div className="font-semibold">{role}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const fields = [
   {
     title: "The best tools for doctors",
@@ -462,7 +596,6 @@ const fields = [
   },
 ];
 
-
 function Sec6() {
   return (
     <section id="pricing" className="w-full py-12">
@@ -488,8 +621,7 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx={12} cy={12} r={10} />
               <polyline points="12 6 12 12 16 14" />
             </svg>
@@ -512,8 +644,7 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
             </svg>
             <h3 className="text-lg font-semibold mb-2 capitalize">
@@ -535,8 +666,7 @@ function Sec6() {
               strokeWidth={2}
               viewBox="0 0 24 24"
               width={24}
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
               <circle cx={9} cy={7} r={4} />
               <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -573,8 +703,7 @@ function Sec7() {
                 className="w-1/3"
                 aria-label="Get Started Free - Start now"
                 title="Click to get started for free"
-                href="https://caresyncunity.live/login"
-              >
+                href="https://caresyncunity.live/login">
                 <div className="mb-5 md:mb-0 grow text-sm text-white text-center items-center transition-all  bg-gradient-to-t from-[#3266EB] to-[#309DEB] font-semibold rounded-md px-5 p-3 border-gray-200 hover:opacity-90">
                   Get Started Now - It's Free!
                 </div>
@@ -588,8 +717,7 @@ function Sec7() {
               viewBox="0 0 377 377"
               fill="none"
               className="absolute -top-[5%] right-[20%] z-10"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <circle
                 opacity="0.6"
                 cx="188.5"
@@ -621,8 +749,7 @@ function Sec7() {
         </div>{" "}
         <div
           id="contact-us"
-          className=" w-full flex-col flex justify-center items-center py-15"
-        >
+          className=" w-full flex-col flex justify-center items-center py-15">
           <h1 className="text-3xl md:text-5xl font-lora font-semibold text-[#0B3E7A] text-center">
             Contact Us
           </h1>
@@ -710,8 +837,7 @@ function Sec7() {
               <div className="flex justify-center md:py-0 py-5">
                 <button
                   className=" w-[60%] md:w-full lg:w-[50%] m-auto bg-[#0B3E7A] text-center items-center transition-all uppercase text-white font-semibold rounded-md px-4 py-2  border-gray-200 hover:opacity-90"
-                  fdprocessedid="v73y6j"
-                >
+                  fdprocessedid="v73y6j">
                   <div className="flex mx-auto justify-center">
                     Send Message{" "}
                     <svg
@@ -720,8 +846,7 @@ function Sec7() {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6  ml-5"
-                    >
+                      className="w-6 h-6  ml-5">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -747,8 +872,7 @@ function Sec7() {
                     title="The leading beauty clinic management platform"
                     aria-label="The leading beauty clinic management software"
                     about="The leading beauty clinic software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Clinic dashboard</h2>
                   </a>
                   <a
@@ -756,8 +880,7 @@ function Sec7() {
                     title="The leading dental clinic management platform"
                     aria-label="The leading dental clinic management software"
                     about="The leading dental clinic software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Doctor dashboard</h2>
                   </a>
                   <a
@@ -765,8 +888,7 @@ function Sec7() {
                     title="The leading lawyer practice management platform"
                     aria-label="The leading lawyer practice management software"
                     about="The leading lawyer practice software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Patient dashboard</h2>
                   </a>
                   <a
@@ -774,8 +896,7 @@ function Sec7() {
                     title="The leading medical clinic management platform"
                     aria-label="The leading medical clinic management software"
                     about="The leading medical clinic software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Pharmacy dashboard</h2>
                   </a>
                   <a
@@ -783,8 +904,7 @@ function Sec7() {
                     title="The leading personal trainers management platform"
                     aria-label="The leading personal trainers management software"
                     about="The leading personal trainers software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Laboratory dashboard</h2>
                   </a>
 
@@ -793,8 +913,7 @@ function Sec7() {
                     title="The leading all in one management platform"
                     aria-label="The leading fully customizable management software"
                     about="The leading management software"
-                    href="#"
-                  >
+                    href="#">
                     <h2>Many More!</h2>
                   </a>
                 </div>
@@ -807,8 +926,7 @@ function Sec7() {
                         version="1.1"
                         viewBox="0 0 512 512"
                         width="100%"
-                        fill="#29419B"
-                      >
+                        fill="#29419B">
                         <path d="M251.921,0.159C183.503,0.159 174.924,0.449 148.054,1.675C121.24,2.899 102.927,7.157 86.902,13.385C70.336,19.823 56.287,28.437 42.282,42.442C28.277,56.447 19.663,70.496 13.225,87.062C6.997,103.086 2.739,121.399 1.515,148.213C0.289,175.083 0,183.662 0,252.08C0,320.497 0.289,329.076 1.515,355.946C2.739,382.76 6.997,401.073 13.225,417.097C19.663,433.663 28.277,447.712 42.282,461.718C56.287,475.723 70.336,484.337 86.902,490.775C102.927,497.002 121.24,501.261 148.054,502.484C174.924,503.71 183.503,504 251.921,504C320.338,504 328.917,503.71 355.787,502.484C382.601,501.261 400.914,497.002 416.938,490.775C433.504,484.337 447.553,475.723 461.559,461.718C475.564,447.712 484.178,433.663 490.616,417.097C496.843,401.073 501.102,382.76 502.325,355.946C503.551,329.076 503.841,320.497 503.841,252.08C503.841,183.662 503.551,175.083 502.325,148.213C501.102,121.399 496.843,103.086 490.616,87.062C484.178,70.496 475.564,56.447 461.559,42.442C447.553,28.437 433.504,19.823 416.938,13.385C400.914,7.157 382.601,2.899 355.787,1.675C328.917,0.449 320.338,0.159 251.921,0.159ZM251.921,45.551C319.186,45.551 327.154,45.807 353.718,47.019C378.28,48.14 391.619,52.244 400.496,55.693C412.255,60.263 420.647,65.723 429.462,74.538C438.278,83.353 443.737,91.746 448.307,103.504C451.757,112.381 455.861,125.72 456.981,150.282C458.193,176.846 458.45,184.814 458.45,252.08C458.45,319.345 458.193,327.313 456.981,353.877C455.861,378.439 451.757,391.778 448.307,400.655C443.737,412.414 438.278,420.806 429.462,429.621C420.647,438.437 412.255,443.896 400.496,448.466C391.619,451.916 378.28,456.02 353.718,457.14C327.158,458.352 319.191,458.609 251.921,458.609C184.65,458.609 176.684,458.352 150.123,457.14C125.561,456.02 112.222,451.916 103.345,448.466C91.586,443.896 83.194,438.437 74.378,429.621C65.563,420.806 60.103,412.414 55.534,400.655C52.084,391.778 47.98,378.439 46.859,353.877C45.647,327.313 45.391,319.345 45.391,252.08C45.391,184.814 45.647,176.846 46.859,150.282C47.98,125.72 52.084,112.381 55.534,103.504C60.103,91.746 65.563,83.353 74.378,74.538C83.194,65.723 91.586,60.263 103.345,55.693C112.222,52.244 125.561,48.14 150.123,47.019C176.687,45.807 184.655,45.551 251.921,45.551Z" />
                         <path d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z" />
                         <path d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z" />
@@ -823,8 +941,7 @@ function Sec7() {
                         version="1.1"
                         viewBox="0 0 512 512"
                         width="100%"
-                        fill="#29419B"
-                      >
+                        fill="#29419B">
                         <path d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" />
                       </svg>
                     </div>
@@ -835,8 +952,7 @@ function Sec7() {
                         width="100%"
                         viewBox="0 0 15 14"
                         fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.41367 0.120914C1.61811 0.0403045 1.83656 0.00151516 2.05616 0.00682821C2.48605 0.0172286 2.89483 0.195795 3.19521 0.504385C3.49558 0.812974 3.66373 1.22712 3.66373 1.65836C3.66373 2.08961 3.49558 2.50375 3.19521 2.81234C2.89483 3.12093 2.48605 3.2995 2.05616 3.3099C1.83656 3.31521 1.61811 3.27642 1.41367 3.19581C1.20924 3.11521 1.02294 2.9944 0.865753 2.84052C0.708562 2.68663 0.583648 2.50277 0.498362 2.29976C0.413076 2.09674 0.369141 1.87866 0.369141 1.65836C0.369141 1.43807 0.413076 1.21999 0.498362 1.01697C0.583648 0.813955 0.708562 0.630095 0.865753 0.47621C1.02294 0.322325 1.20924 0.201523 1.41367 0.120914Z"
                           fill="#29419B"
@@ -859,8 +975,7 @@ function Sec7() {
                         version="1.1"
                         id="Layer_1"
                         viewBox="0 0 461.001 461.001"
-                        fill="#29419B"
-                      >
+                        fill="#29419B">
                         <g>
                           <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
                         </g>
@@ -877,8 +992,7 @@ function Sec7() {
                       title="Click to go to the Blog page"
                       className="hover:underline"
                       aria-label="The Kliniki Blog"
-                      href="#features"
-                    >
+                      href="#features">
                       Features
                     </a>
                   </div>
@@ -887,8 +1001,7 @@ function Sec7() {
                       title="Click to go to the Support page"
                       className="hover:underline"
                       aria-label="Kliniki Customer Support"
-                      href="#fields"
-                    >
+                      href="#fields">
                       Fields
                     </a>
                   </div>
@@ -897,8 +1010,7 @@ function Sec7() {
                       href="#pricing"
                       title="View the Pricing section"
                       className="hover:underline"
-                      aria-label="The Kliniki Platform Pricing"
-                    >
+                      aria-label="The Kliniki Platform Pricing">
                       Pricing
                     </a>
                   </div>
@@ -907,8 +1019,7 @@ function Sec7() {
                       title="Click to go to the Resellers page"
                       className="hover:underline"
                       aria-label="Resell the Kliniki Platform"
-                      href="#contact-us"
-                    >
+                      href="#contact-us">
                       Contact Us
                     </a>
                   </div>
@@ -916,8 +1027,7 @@ function Sec7() {
               </div>
               <a
                 title="Click to view HBTech's website"
-                href="https://www.hb-tech.org"
-              >
+                href="https://www.hb-tech.org">
                 <div className="py-8 border-t text-center mt-10 md:mt-0 text-[#4B5563] text-xs">
                   All rights reserved © 2025 CareSyncUnity
                 </div>

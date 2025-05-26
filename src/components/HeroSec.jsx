@@ -21,7 +21,7 @@ function HeroSec() {
   }, []);
 
   return (
-    <div className="h-[55%] sm:h-[65%] md:h-[75vh] lg:h-[93vh] w-full shadow-md px-2 md:px-10 lg:px-24 xl:px-40 bg-[#0B3E7A] relative overflow-hidden">
+    <div className="h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] xl:h-full w-full shadow-md px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 bg-[#0B3E7A] relative overflow-hidden mb-8">
       <Icon1 />
       <div className="w-full h-full flex flex-col">
         <div className="mb-8 mt-8  text-3xl flex-1 md:text-4xl lg:text-5xl xl:text-6xl w-full text-center flex justify-center items-center text-white font-semibold slide-b">
@@ -34,18 +34,15 @@ function HeroSec() {
         </div>
         <div
           id="mainPage"
-          className="w-full flex-1 lg:flex-[1.5] flex transition-all duration-1000"
-        >
+          className="w-full flex-1 lg:flex-[1.5] flex transition-all duration-1000">
           <div
             id="mainImage"
-            className="w-full h-full relative flex justify-center items-end md:imageSkew md:slideSkew transition-all duration-1000"
-          >
+            className="w-full h-full relative flex justify-center items-end md:imageSkew md:slideSkew transition-all duration-1000">
             <motion.div
               variants={FadeUp(0.5)}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-            >
+              viewport={{ once: true }}>
               <Icon2 />
               <motion.img
                 key={currentIndex} // Change the key to force a re-render when the image changes
@@ -57,7 +54,7 @@ function HeroSec() {
                 height="541.4732403924598"
                 decoding="async"
                 data-nimg={1}
-                className="object-bottom object-contain slide-b z-10 rounded-xl shadow-lg"
+                className="object-cover w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-full rounded-xl shadow-lg"
                 initial={{ opacity: 0 }} // Start with opacity 0 (hidden)
                 animate={{ opacity: 1 }} // Animate to opacity 1 (visible)
                 exit={{ opacity: 0 }} // Exit with opacity 0 (fade out)
@@ -115,8 +112,7 @@ function Icon2() {
         height={205}
         viewBox="0 0 197 205"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        xmlns="http://www.w3.org/2000/svg">
         <path
           d="M121.704 128.34a20.07 20.07 0 0 1-1.485 1.322c.093-.069.209-.185.301-.255.372-.371.766-.719 1.184-1.067Z"
           fill="#2B78D3"
