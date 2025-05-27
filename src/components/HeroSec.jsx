@@ -66,7 +66,8 @@ function HeroSec() {
       </div>
     </div>
   );
-}
+} 
+
 
 function Icon1() {
   return (
