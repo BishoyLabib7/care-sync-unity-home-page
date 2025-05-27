@@ -54,7 +54,7 @@ function HeroSec() {
                 height="541.4732403924598"
                 decoding="async"
                 data-nimg={1}
-                className=" object-contain w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-[300px] xl:h-full rounded-xl shadow-lg"
+                className=" object-contain w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-auto xl:h-full rounded-xl shadow-lg"
                 initial={{ opacity: 0 }} // Start with opacity 0 (hidden)
                 animate={{ opacity: 1 }} // Animate to opacity 1 (visible)
                 exit={{ opacity: 0 }} // Exit with opacity 0 (fade out)
