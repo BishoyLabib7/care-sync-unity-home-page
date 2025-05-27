@@ -22,12 +22,16 @@ function HeroSec() {
 
   return (
     <div className="h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] xl:h-full w-full shadow-md px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 bg-[#0B3E7A] relative overflow-hidden mb-8">
-      <Icon1 />
+      {/* <Icon1 /> */}
       <div className="w-full h-full flex flex-col">
-        <div className="mb-8 mt-8  text-3xl flex-1 md:text-4xl lg:text-5xl xl:text-6xl w-full text-center flex justify-center items-center text-white font-semibold slide-b">
-          <h1 className="my-auto leading-[30px] text-xl md:leading-[77px] lg:leading-[87px] xl:leading-[97px] capitalize w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] font-lora font-semibold">
+        <div className="my-8  flex-1  w-full text-center flex justify-center items-center text-white font-semibold slide-b">
+          <h1 className=" leading-[30px] text-xl md:text-3xl 2xl:text-6xl capitalize  font-lora font-semibold">
+            {/* w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] */}
             The
-            <span className="underline font-bold underline-offset-4"> Only </span>
+            <span className="underline font-bold underline-offset-4">
+              {" "}
+              Only{" "}
+            </span>
             <span className="bg-pan"> Healthcare management platform </span>
             you will need
           </h1>
@@ -37,7 +41,7 @@ function HeroSec() {
           className="w-full flex-1 lg:flex-[1.5] flex transition-all duration-1000">
           <div
             id="mainImage"
-            className="w-full h-full relative flex justify-center items-end md:imageSkew md:slideSkew transition-all duration-1000">
+            className="w-full h-full relative flex justify-center items-end ">
             <motion.div
               variants={FadeUp(0.5)}
               initial="hidden"
@@ -54,7 +58,7 @@ function HeroSec() {
                 height="541.4732403924598"
                 decoding="async"
                 data-nimg={1}
-                className=" object-contain w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-auto xl:h-full rounded-xl shadow-lg"
+                className="  w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-auto xl:h-full rounded-xl shadow-lg"
                 initial={{ opacity: 0 }} // Start with opacity 0 (hidden)
                 animate={{ opacity: 1 }} // Animate to opacity 1 (visible)
                 exit={{ opacity: 0 }} // Exit with opacity 0 (fade out)
@@ -68,7 +72,7 @@ function HeroSec() {
   );
 }
 
-function Icon1() {
+/* function Icon1() {
   return (
     <div className="absolute -left-72 -top-20 md:-top-0 md:-left-0 animate animate-pulse">
       <svg width={525} height={534} viewBox="0 0 525 534" fill="none">
@@ -103,7 +107,7 @@ function Icon1() {
       </svg>
     </div>
   );
-}
+} */
 function Icon2() {
   return (
     <div className="absolute -top-5 md:top-16 md:-right-16 lg:top-20 -right-20 xl:-right-20 xl:-top-5 opacity-20 animate-pulse">
