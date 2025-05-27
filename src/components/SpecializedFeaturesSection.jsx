@@ -5,54 +5,65 @@ import { useState, useEffect } from "react";
 const Data = [
   {
     title: "Doctor",
-    descriptionH3: "Handcrafted to maintain your Medical Clinic",
-    descriptionP:
-      "Whether you are a physiotherapist or a surgeon, all the tools you need are built into Kliniki",
-    Point1: "Custom forms assignable to patients or sessions",
-    Point2: "Exercise dashboard to share videos with your patients",
-    Point3: "Research tools from the National Library of Medicine",
-    image: "/public/images/Medical.png",
+    descriptionH3: "The best tools for doctors",
+    descriptionP: "All the tools a doctor would need to manage their patients",
+    Point1: "Pie chart for your hospitals, clinic",
+    Point2: "Providing dashboards that show their timetables for remainders",
+    Point3:
+      "Providing current patients` status and their recent analysis results",
+    image: "/images/Medical.png",
   },
+
   {
     title: "Patient",
-    descriptionH3: "The best tools for the best dentists",
-    descriptionP: "All the tools a dentist would need to manage their clinic",
-    Point1: "Dental chart for your patients",
-    Point2: "SMS, Email and Whatsapp reminders",
-    Point3: "Full patient management with custom forms and data points",
-    image: "/images/patient-appointments.png",
+    descriptionH3:
+      "Your healthcare process is taken care of with Care Sync Unity",
+    descriptionP:
+      "We take care of everything a patient might need for their healthcare to help them take best service",
+
+    Point1: "Providing a real time counter of their turn",
+    Point2:
+      "Determining all the nearest healthcare providers to their region with less prices",
+    Point3:
+      "Providing a list of top nearest and eligible and qualified doctors to their region",
+
+    image: "/images/patient.png",
   },
   {
     title: "Clinic",
-    descriptionH3: "Your beauty clinic, managed",
-    descriptionP:
-      "Everything you need to provide efficient scheduling for your beauty clinic",
-    Point1: "Custom branding, colors and logo",
-    Point2:
-      "10 different calendar views to be able to schedule appointments fast and clearly",
-    Point3: "Public booking for your customers",
-    image: "/images/statistics.png",
+    descriptionH3: "Handcrafted to maintain your Medical Clinic",
+    descriptionP: "All the tools you need are built into Care Sync Unity",
+
+    Point1: "Helping them to increase their profit.",
+    Point2: "Make small clinics visible for both patients and doctors",
+    Point3:
+      "Providing an organized and secure system to deal with patients and doctors",
+
+    image: "/images/clinic.PNG",
   },
   {
     title: "Pharmacy",
-    descriptionH3: "Your law practice is taken care of with Kliniki",
-    descriptionP:
-      "We take care of everything a lawyer might need for their practice to help you offer the best service possible",
-    Point1: "Video conferencing",
+    descriptionH3: "You register, leave the management to us",
+    descriptionP: "Provieding trainer needs to manage their business",
+
+    Point1:
+      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
     Point2:
-      "Public forms for your customers to explain their situation and upload files",
-    Point3: "Documents sharing and signing",
-    image: "/images/chatting.png",
+      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
+
+    image: "/images/Pharmacy.PNG",
   },
   {
     title: "Laboratory",
-    descriptionH3: "You train, leave the management to us",
-    descriptionP: "Anything a personal trainer needs to manage their business",
-    Point1: "Session Recurrency",
-    Point2: "Customers management and online booking",
-    Point3:
-      "Fully integrated public profile SEO for new customers to find you faster",
-    image: "/images/chatting.png",
+    descriptionH3: "You register, leave the management to us",
+    descriptionP: "Provieding trainer needs to manage their business",
+
+    Point1:
+      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
+    Point2:
+      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
+
+    image: "/images/Laboratory.PNG",
   },
 ];
 
@@ -168,7 +179,8 @@ function SpecializedFeaturesSection() {
     <div
       id="fields"
       className="flex flex-col bg-[#0B3E7A] pt-8 sm:pt-10 md:pt-12 lg:pt-16 min-h-screen md:min-h-[110%] 4xl:min-h-[65%] overflow-x-hidden box-border"
-      style={{ boxSizing: "border-box" }}>
+      style={{ boxSizing: "border-box" }}
+    >
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl px-4 sm:px-6 md:px-0 w-full text-center whitespace-pre-wrap flex justify-center items-center text-white font-lora font-semibold leading-tight">
         Specific features <br className="hidden md:block" />
         for your field of work
@@ -188,7 +200,8 @@ function SpecializedFeaturesSection() {
                   ? "bg-[#3165EB] font-semibold"
                   : "bg-none"
               }`}
-            style={{ boxSizing: "border-box" }}>
+            style={{ boxSizing: "border-box" }}
+          >
             {item.title}
           </h3>
         ))}
@@ -202,7 +215,8 @@ function SpecializedFeaturesSection() {
               key={index}
               className={`flex flex-col-reverse md:flex-row px-4 sm:px-8 md:px-4 lg:px-8 h-full w-full transition-opacity duration-500
               ${index === currentIndex ? "opacity-100" : "opacity-0 hidden"}`}
-              style={{ boxSizing: "border-box" }}>
+              style={{ boxSizing: "border-box" }}
+            >
               {/* Text Content */}
               <div className="z-10 flex flex-col grow-[1] basis-full md:basis-2/6 h-auto md:h-full mt-4 sm:mt-6 md:mt-10 box-border">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-lora font-semibold mb-4 sm:mb-6 md:mb-8 leading-tight">
@@ -223,8 +237,9 @@ function SpecializedFeaturesSection() {
                   <a
                     href="/business/medical-clinics"
                     className="bg-white text-[#0B3E7A] px-5 sm:px-6 md:px-8 py-2 rounded font-semibold hover:opacity-75 text-xs sm:text-sm md:text-base mt-6 self-start"
-                    title="Kliniki For Medical Clinics">
-                    Kliniki For Medical Clinics
+                    title="Kliniki For Medical Clinics"
+                  >
+                    Register Now
                   </a>
                 </div>
               </div>
@@ -259,7 +274,8 @@ function SVGIcon() {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className="w-6 h-6 fill-green-600 text-white">
+      className="w-6 h-6 fill-green-600 text-white"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"

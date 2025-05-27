@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="sm:px-16 md:px-24 lg:px-36 shadow-md bg-[#0B3E7A] text-white flex justify-between items-center p-2 w-full sticky top-0 z-50 h-[91px]">
+    <header className="sm:px-16 md:px-24 lg:px-36 shadow-md bg-[#0B3E7A] text-white flex justify-between items-center p-2 w-full sticky top-0 z-50 h-[91px]">
       <div className="md:hidden">
         <div className="cursor-pointer px-5">
           <svg
@@ -145,7 +145,7 @@ function Header() {
           </button>
         </a>
       </div>
-    </div>
+    </header>
   );
 }
 

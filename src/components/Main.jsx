@@ -1,4 +1,3 @@
-
 import HeroSec from "./HeroSec";
 import GeneralFeatures from "./GeneralFeatures";
 import Testimonials from "./Testimonials";
@@ -6,11 +5,11 @@ import MiddleFeaturesSection from "./MiddleFeaturesSection";
 import SpecializedFeaturesSection from "./SpecializedFeaturesSection";
 import BenefitsSection from "./BenefitsSection";
 import CallToAction from "./CallToAction";
-import ContactUsSection from "./ContactUsSection";  
+import ContactUsSection from "./ContactUsSection";
 import Footer from "./Footer";
 function Main() {
   return (
-    <div className="h-screen">
+    <main className="h-screen">
       <HeroSec />
       <GeneralFeatures />
       {/* <div className="h-1/6 w-full md:relative -z-10 hidden md:block gradientSplit" /> */}
@@ -28,9 +27,7 @@ function Main() {
       <CallToAction />
       <ContactUsSection />
       <Footer />
-      
-
-    </div>
+    </main>
   );
 }
 
@@ -184,10 +181,6 @@ function Main() {
   );
 } */
 
-
-
-
-
 function Card({ title, text, imgSrc, alt, name, role }) {
   return (
     <div className="bg-white shadow-md rounded-lg py-6 px-9 mx-2 md:mx-0 flex flex-col justify-between w-full snap-center min-w-[90%] md:min-w-[40%]">
@@ -241,65 +234,5 @@ function TestimonialCard({ title, text, imgSrc, alt, name, role }) {
     </div>
   );
 }
-
-const fields = [
-  {
-    title: "The best tools for doctors",
-    details: "All the tools a doctor would need to manage their patients",
-    features: [
-      "Pie chart for your hospitals, clinic",
-      "Providing dashboards that show their timetables for remainders",
-      "Providing current patients’ status and their recent analysis results",
-    ],
-    image: "/images/Medical.png",
-    button: "Register Now",
-  },
-
-  {
-    title: "Your healthcare process is taken care of with Care Sync Unity",
-    details:
-      "We take care of everything a patient might need for their healthcare to help them take best service",
-    features: [
-      "Providing a real time counter of their turn",
-      "Determining all the nearest healthcare providers to their region with less prices",
-      "Providing a list of top nearest and eligible and qualified doctors to their region",
-    ],
-    image: "/images/patient.png",
-    button: "Register Now",
-  },
-  {
-    title: "Handcrafted to maintain your Medical Clinic",
-    details: "All the tools you need are built into Care Sync Unity",
-    features: [
-      "Helping them to increase their profit.",
-      "Make small clinics visible for both patients and doctors",
-      "Providing an organized and secure system to deal with patients and doctors",
-    ],
-    image: "/images/clinic.png",
-    button: "Register Now",
-  },
-  {
-    title: "You register, leave the management to us",
-    details: "Provieding trainer needs to manage their business",
-    features: [
-      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
-      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
-    ],
-    image: "/images/Medical.png",
-    button: "Register Now",
-  },
-  {
-    title: "You register, leave the management to us",
-    details: "Provieding trainer needs to manage their business",
-    features: [
-      "When a patient sees a new specialist, the pharmacy within the CareSync Unity System can quickly access the updated medication list",
-      "Automation frees up pharmacists' time to focus on clinical tasks, patient counseling, and providing more personalized care",
-    ],
-    image: "/images/Medical.png",
-    button: "Register Now",
-  },
-];
-
-
 
 export default Main;
