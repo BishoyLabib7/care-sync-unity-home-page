@@ -25,11 +25,11 @@ function HeroSec() {
       <Icon1 />
       <div className="w-full h-full flex flex-col">
         <div className="mb-8 mt-8  text-3xl flex-1 md:text-4xl lg:text-5xl xl:text-6xl w-full text-center flex justify-center items-center text-white font-semibold slide-b">
-          <h1 className="my-auto leading-[57px] md:leading-[77px] lg:leading-[87px] xl:leading-[97px] capitalize w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] font-lora font-semibold">
-            The&nbsp;
-            <span className="underline font-bold underline-offset-8">Only</span>
-            &nbsp;<span className="bg-pan">Healthcare management platform</span>
-            &nbsp; you will need
+          <h1 className="my-auto leading-[30px] text-xl md:leading-[77px] lg:leading-[87px] xl:leading-[97px] capitalize w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] font-lora font-semibold">
+            The
+            <span className="underline font-bold underline-offset-4"> Only </span>
+            <span className="bg-pan"> Healthcare management platform </span>
+            you will need
           </h1>
         </div>
         <div
@@ -66,8 +66,7 @@ function HeroSec() {
       </div>
     </div>
   );
-} 
-
+}
 
 function Icon1() {
   return (
