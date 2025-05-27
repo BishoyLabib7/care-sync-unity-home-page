@@ -24,8 +24,8 @@ function HeroSec() {
     <div className="h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] xl:h-full w-full shadow-md px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 bg-[#0B3E7A] relative overflow-hidden mb-8">
       {/* <Icon1 /> */}
       <div className="w-full h-full flex flex-col">
-        <div className="my-8  flex-1  w-full text-center flex justify-center items-center text-white font-semibold slide-b">
-          <h1 className=" leading-[30px] text-xl md:text-3xl 2xl:text-6xl capitalize  font-lora font-semibold">
+        <div className="my-2 xl:my-8   flex-1   text-center flex justify-center items-center text-white font-semibold ">
+          <h1 className=" leading-[60px] text-3xl md:text-3xl 2xl:text-6xl capitalize  font-lora font-semibold">
             {/* w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] */}
             The
             <span className="underline font-bold underline-offset-4">
@@ -58,7 +58,7 @@ function HeroSec() {
                 height="541.4732403924598"
                 decoding="async"
                 data-nimg={1}
-                className="  w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-auto xl:h-full rounded-xl shadow-lg"
+                className="  w-[80vw]  sm:h-[384px] md:h-[537.6px] lg:h-[819.2px] h-auto xl:h-[450px] 2xl:h-[900px] rounded-xl shadow-lg"
                 initial={{ opacity: 0 }} // Start with opacity 0 (hidden)
                 animate={{ opacity: 1 }} // Animate to opacity 1 (visible)
                 exit={{ opacity: 0 }} // Exit with opacity 0 (fade out)
