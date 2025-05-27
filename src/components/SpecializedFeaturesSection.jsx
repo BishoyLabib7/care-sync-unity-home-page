@@ -226,14 +226,20 @@ function SpecializedFeaturesSection() {
                   {data.descriptionP}
                 </p>
                 <div className="md:px-8 lg:px-10 flex flex-col gap-4 box-border">
-                  {[data.Point1, data.Point2, data.Point3].map((point, i) => (
-                    <div key={i} className="flex gap-3 items-start box-border">
-                      <SVGIcon />
-                      <p className="text-white text-xs sm:text-sm md:text-base">
-                        {point}
-                      </p>
-                    </div>
-                  ))}
+                  {[data.Point1, data.Point2, data.Point3].map(
+                    (point, i) =>
+                      point && (
+                        <div
+                          key={i}
+                          className="flex gap-3 items-start box-border"
+                        >
+                          <SVGIcon />
+                          <p className="text-white text-xs sm:text-sm md:text-base">
+                            {point}
+                          </p>
+                        </div>
+                      )
+                  )}
                   <a
                     href="/business/medical-clinics"
                     className="bg-white text-[#0B3E7A] px-5 sm:px-6 md:px-8 py-2 rounded font-semibold hover:opacity-75 text-xs sm:text-sm md:text-base mt-6 self-start"
