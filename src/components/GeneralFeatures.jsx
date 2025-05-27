@@ -5,7 +5,7 @@ function GeneralFeatures() {
     <section
       className="bg-[#F7F9FC] pt-10 pb-20 md:pt-16 md:pb-24 px-5 md:px-20 lg:px-40 flex flex-col-reverse md:flex-row items-center gap-10"
       style={{ scrollMarginTop: "80px" }}>
-      {/* النص */}
+      {/* text */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-lora font-semibold mb-6 md:mb-10 text-[#0B3E7A] leading-tight">
           Handcrafted to meet all your needs
@@ -52,7 +52,7 @@ function GeneralFeatures() {
         </a>
       </div>
 
-      {/* الصورة */}
+      {/* img */}
       <div className="w-full md:w-1/2 flex justify-center items-center max-h-[500px]">
         <motion.img
           variants={FadeUp(0.5)}

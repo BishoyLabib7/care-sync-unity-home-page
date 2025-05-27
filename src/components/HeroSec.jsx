@@ -22,11 +22,9 @@ function HeroSec() {
 
   return (
     <div className="h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[90vh] xl:h-full w-full shadow-md px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 bg-[#0B3E7A] relative overflow-hidden mb-8">
-      {/* <Icon1 /> */}
       <div className="w-full h-full flex flex-col">
         <div className="my-2 xl:my-8   flex-1   text-center flex justify-center items-center text-white font-semibold ">
           <h1 className=" leading-[60px] text-3xl md:text-3xl 2xl:text-6xl capitalize  font-lora font-semibold">
-            {/* w-[90%] sm:w-[80%] md:w-[80%] lg:w-[85%] xl:w-[85%] */}
             The
             <span className="underline font-bold underline-offset-4">
               {" "}
@@ -72,42 +70,6 @@ function HeroSec() {
   );
 }
 
-/* function Icon1() {
-  return (
-    <div className="absolute -left-72 -top-20 md:-top-0 md:-left-0 animate animate-pulse">
-      <svg width={525} height={534} viewBox="0 0 525 534" fill="none">
-        <path
-          opacity="0.1"
-          d="M457 143C457 227.318 416.842 307.194 355.536 366.007C294.229 424.82 211.844 462.5 127.5 462.5C43.0459 462.5 -33.3405 438.121 -88.5932 392.706C-143.826 347.307 -178 280.841 -178 196.5C-178 27.777 -41.223 -109 127.5 -109C211.99 -109 294.404 -88.1025 355.663 -46.1531C416.89 -4.22617 457 58.7307 457 143Z"
-          stroke="#E1E7EF"
-          strokeOpacity="0.35"
-          strokeWidth={2}
-        />
-        <path
-          opacity="0.1"
-          d="M524 156.777C524 256.074 476.692 350.131 404.482 419.38C332.272 488.629 235.229 533 135.871 533C36.4029 533 -53.5764 504.297 -118.668 450.813C-183.74 397.345 -224 319.066 -224 219.745C-224 21.0639 -62.8805 -140 135.871 -140C235.376 -140 332.447 -115.398 404.61 -65.9992C476.74 -16.6229 524 57.5282 524 156.777Z"
-          stroke="#E1E7EF"
-          strokeOpacity="0.35"
-          strokeWidth={2}
-        />
-        <path
-          opacity="0.1"
-          d="M491 119.777C491 219.074 443.692 313.131 371.482 382.38C299.272 451.629 202.229 496 102.871 496C3.40286 496 -86.5764 467.297 -151.668 413.813C-216.74 360.345 -257 282.066 -257 182.745C-257 -15.9361 -95.8805 -177 102.871 -177C202.376 -177 299.447 -152.398 371.61 -102.999C443.74 -53.6229 491 20.5282 491 119.777Z"
-          stroke="#E1E7EF"
-          strokeOpacity="0.35"
-          strokeWidth={2}
-        />
-        <path
-          opacity="0.1"
-          d="M414 85.7768C414 185.074 366.692 279.131 294.482 348.38C222.272 417.629 125.229 462 25.8713 462C-73.5971 462 -163.576 433.297 -228.668 379.813C-293.74 326.345 -334 248.066 -334 148.745C-334 -49.9361 -172.88 -211 25.8713 -211C125.376 -211 222.447 -186.398 294.61 -136.999C366.74 -87.6229 414 -13.4718 414 85.7768Z"
-          stroke="#E1E7EF"
-          strokeOpacity="0.35"
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-  );
-} */
 function Icon2() {
   return (
     <div className="absolute -top-5 md:top-16 md:-right-16 lg:top-20 -right-20 xl:-right-20 xl:-top-5 opacity-20 animate-pulse">
