@@ -39,7 +39,7 @@ const Data = [
     Point3:
       "Providing an organized and secure system to deal with patients and doctors",
 
-    image: "/images/clinic.PNG",
+    image: "/images/clinic.png",
   },
   {
     title: "Pharmacy",

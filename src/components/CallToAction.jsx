@@ -3,7 +3,7 @@ function CallToAction() {
     <>
       <div className="h-[70vh] md:h-fit flex flex-col justify-between bg-[#F7F9FC] overflow-x-hidden md:overflow-x-auto">
         <div className="h-full grow bg-gradient-to-r from-[#0B3E7A] to-[#477BFF] relative box-content">
-          <div className="py-16 px-3 md:pl-20 text-white flex flex-col h-full z-50 relative">
+          <div className="py-16 px-3 md:pl-20 text-white flex flex-col h-full z-40 relative">
             <div className="grow-[2] md:hidden" />
             <div className="pb-2">What are you waiting for?</div>
             <div className="text-4xl font-lora font-medium">
