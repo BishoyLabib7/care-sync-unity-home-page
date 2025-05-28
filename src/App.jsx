@@ -1,11 +1,13 @@
-import Main from "./components/Main";
+import PageLayout from "./components/PageLayout";
 import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <main className="h-screen">
+        <PageLayout />
+      </main>
     </>
   );
 }

@@ -36,15 +36,18 @@ function HeroSec() {
         </div>
         <div
           id="mainPage"
-          className="w-full flex-1 lg:flex-[1.5] flex transition-all duration-1000">
+          className="w-full flex-1 lg:flex-[1.5] flex transition-all duration-1000"
+        >
           <div
             id="mainImage"
-            className="w-full h-full relative flex justify-center items-end ">
+            className="w-full h-full relative flex justify-center items-end "
+          >
             <motion.div
               variants={FadeUp(0.5)}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}>
+              viewport={{ once: true }}
+            >
               <Icon2 />
               <motion.img
                 key={currentIndex} // Change the key to force a re-render when the image changes
@@ -78,7 +81,8 @@ function Icon2() {
         height={205}
         viewBox="0 0 197 205"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M121.704 128.34a20.07 20.07 0 0 1-1.485 1.322c.093-.069.209-.185.301-.255.372-.371.766-.719 1.184-1.067Z"
           fill="#2B78D3"
